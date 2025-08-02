@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharat Kalra — SEO & Digital Marketing Strategist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="noise"></div>
+  <canvas id="particleCanvas"></canvas>
+  
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loading-logo">BK</div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+      <p class="loading-text">Crafting Digital Excellence</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo" data-aos="fade-down">
+        <span class="logo-text">Bharat Kalra</span>
+        <span class="logo-subtitle">Digital Strategist</span>
+      </a>
+      <ul class="nav-menu" data-aos="fade-down" data-aos-delay="200">
+        <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#services" class="nav-link"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> Work</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-up">
+        <i class="fas fa-rocket"></i>
+        <span>Available for Internships</span>
+      </div>
+      
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+        <span class="title-line">Bharat</span>
+        <span class="title-line gradient-text">Kalra</span>
+      </h1>
+      
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+        SEO Strategist & Digital Marketing Executive
+      </p>
+      
+      <p class="hero-description" data-aos="fade-up" data-aos-delay="600">
+        Transforming brands through data-driven SEO strategies, compelling content, 
+        and cutting-edge digital marketing solutions that drive real results.
+      </p>
+      
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+        <div class="stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">200%</span>
+          <span class="stat-label">Avg. Traffic Growth</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">1+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+      
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="1000">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="images/resume.pdf" class="btn btn-secondary" download>
+          <i class="fas fa-download"></i>
+          <span>Download Resume</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <p class="about-intro">
+            I'm a passionate Digital Marketing Executive and SEO Strategist with a proven track record 
+            of helping businesses achieve exponential growth through strategic digital initiatives.
+          </p>
+          
+          <div class="about-highlights">
+            <div class="highlight">
+              <i class="fas fa-search"></i>
+              <div>
+                <h4>SEO Expertise</h4>
+                <p>Advanced on-page, off-page, and technical SEO optimization</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <h4>Growth Hacking</h4>
+                <p>Data-driven strategies that deliver measurable results</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-robot"></i>
+              <div>
+                <h4>AI Integration</h4>
+                <p>Leveraging ChatGPT and AI tools for content optimization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-skills" data-aos="fade-left">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+              <span>WordPress</span>
+              <div class="skill-level" data-level="95"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fas fa-search"></i></div>
+              <span>SEO</span>
+              <div class="skill-level" data-level="98"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+              <span>Analytics</span>
+              <div class="skill-level" data-level="90"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fab fa-google"></i></div>
+              <span>Google Ads</span>
+              <div class="skill-level" data-level="85"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <span>HTML/CSS</span>
+              <div class="skill-level" data-level="80"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon"><i class="fas fa-robot"></i></div>
+              <span>AI Tools</span>
+              <div class="skill-level" data-level="92"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">What I offer</span>
+        <h2 class="section-title">Services</h2>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <i class="fas fa-search-plus"></i>
+          </div>
+          <h3>SEO Optimization</h3>
+          <p>Comprehensive SEO audits, keyword research, and on-page optimization to boost your search rankings.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Technical SEO Audits</li>
+            <li><i class="fas fa-check"></i> Keyword Strategy</li>
+            <li><i class="fas fa-check"></i> Content Optimization</li>
+          </ul>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Strategic digital marketing campaigns that drive engagement, conversions, and sustainable growth.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Social Media Marketing</li>
+            <li><i class="fas fa-check"></i> PPC Campaign Management</li>
+            <li><i class="fas fa-check"></i> Email Marketing</li>
+          </ul>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <i class="fas fa-pen-fancy"></i>
+          </div>
+          <h3>Content Strategy</h3>
+          <p>AI-powered content creation and optimization strategies that resonate with your target audience.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Content Planning</li>
+            <li><i class="fas fa-check"></i> AI-Enhanced Writing</li>
+            <li><i class="fas fa-check"></i> Brand Storytelling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Featured work</span>
+        <h2 class="section-title">Projects & Content</h2>
+      </div>
+      
+      <!-- Featured Project -->
+      <div class="featured-project" data-aos="fade-up">
+        <div class="project-content">
+          <div class="project-info">
+            <span class="project-label">Featured Project</span>
+            <h3>BakeBoat.com</h3>
+            <p>A comprehensive GPT-powered recipe platform optimized for search engines and user experience. Built from the ground up with WordPress and Elementor, featuring AI-generated content and exceptional Core Web Vitals scores.</p>
+            
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">95+</span>
+                <span class="metric-label">PageSpeed Score</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">300%</span>
+                <span class="metric-label">Traffic Growth</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">50+</span>
+                <span class="metric-label">Keywords Ranked</span>
+              </div>
+            </div>
+            
+            <div class="project-tech">
+              <span class="tech-tag">WordPress</span>
+              <span class="tech-tag">Elementor</span>
+              <span class="tech-tag">ChatGPT</span>
+              <span class="tech-tag">SEO</span>
+            </div>
+            
+            <a href="https://bakeboat.com" target="_blank" class="btn btn-primary">
+              <span>Visit Website</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          
+          <div class="project-image">
+            <img src="images/bakeboat-1.png" alt="BakeBoat Website Screenshot">
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- LinkedIn Posts Section -->
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Content Creation</span>
+        <h2 class="section-title">LinkedIn Posts</h2>
+      </div>
+
+      <div class="content-grid" data-aos="fade-up">
+        <div class="content-card post-card">
+          <img src="images/6.jpg" alt="LinkedIn Post 1" loading="lazy">
+          <div class="card-overlay">
+            <h4>Strategic Content Planning</h4>
+            <p>Content strategy that drives engagement</p>
+            <span class="card-metric">2.5K+ Likes</span>
+          </div>
+        </div>
+        <div class="content-card post-card">
+          <img src="images/8.jpg" alt="LinkedIn Post 2" loading="lazy">
+          <div class="card-overlay">
+            <h4>SEO Best Practices</h4>
+            <p>Technical SEO insights and tips</p>
+            <span class="card-metric">1.8K+ Shares</span>
+          </div>
+        </div>
+        <div class="content-card post-card">
+          <img src="images/10.jpg" alt="LinkedIn Post 3" loading="lazy">
+          <div class="card-overlay">
+            <h4>Digital Transformation</h4>
+            <p>Modern marketing strategies</p>
+            <span class="card-metric">3.2K+ Views</span>
+          </div>
+        </div>
+        <div class="content-card post-card">
+          <img src="images/25.jpg" alt="LinkedIn Post 4" loading="lazy">
+          <div class="card-overlay">
+            <h4>Analytics Deep Dive</h4>
+            <p>Data-driven decision making</p>
+            <span class="card-metric">1.5K+ Comments</span>
+          </div>
+        </div>
+        <div class="content-card post-card">
+          <img src="images/29.jpg" alt="LinkedIn Post 5" loading="lazy">
+          <div class="card-overlay">
+            <h4>Growth Hacking Tips</h4>
+            <p>Proven growth strategies</p>
+            <span class="card-metric">2.1K+ Likes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo Design Section -->
+      <div class="section-header" data-aos="fade-up" style="margin-top: var(--spacing-xl);">
+        <span class="section-subtitle">Visual Identity</span>
+        <h2 class="section-title">Logo Design</h2>
+      </div>
+
+      <div class="content-grid" data-aos="fade-up">
+        <div class="content-card logo-card">
+          <img src="images/logo_1.jpg" alt="Logo Design 1">
+          <div class="card-overlay">
+            <h4>Brand Identity Design</h4>
+            <p>Modern logo with strong brand presence</p>
+            <span class="card-metric">Clean & Modern</span>
+          </div>
+        </div>
+        <div class="content-card logo-card">
+          <img src="images/logo_2.png" alt="Logo Design 2">
+          <div class="card-overlay">
+            <h4>Corporate Branding</h4>
+            <p>Professional corporate identity</p>
+            <span class="card-metric">Professional</span>
+          </div>
+        </div>
+        <div class="content-card logo-card">
+          <img src="images/logo_3.png" alt="Logo Design 3">
+          <div class="card-overlay">
+            <h4>Creative Concept</h4>
+            <p>Innovative design approach</p>
+            <span class="card-metric">Creative</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">My journey</span>
+        <h2 class="section-title">Experience & Education</h2>
+      </div>
+      
+      <div class="timeline" data-aos="fade-up">
+        <div class="timeline-item">
+          <div class="timeline-date">2024 — Present</div>
+          <div class="timeline-content">
+            <h3>Digital Marketing Executive</h3>
+            <span class="timeline-company">Freelance</span>
+            <p>Leading comprehensive digital marketing strategies for diverse clients, focusing on SEO optimization, content marketing, and AI-powered solutions.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-date">2019 — 2023</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Science in Agriculture</h3>
+            <span class="timeline-company">Khalsa College</span>
+            <p>Graduated with honors, developing analytical thinking and research skills that translate perfectly to data-driven marketing.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>Excel & Accounting Certification</h3>
+            <span class="timeline-company">Sangam Computers</span>
+            <p>Advanced proficiency in data analysis and financial modeling, essential for marketing analytics and ROI optimization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2024 Bharat Kalra. Crafted with passion for digital excellence.</p>
+        </div>
+        <div class="footer-right">
+          <p>Hosted on <i class="fab fa-github"></i> GitHub Pages</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
